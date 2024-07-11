@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News web</title>
+    <link rel="stylesheet" href="one.css">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="images">
+                <img src="./a.jpeg" alt="image1s">
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li class="hover-links" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-links" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-links" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id="search-text" type="text1" class="news-input" placeholder="eg. science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-cards">
+        <div class="cards">
+            <div class="cards-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">this is content</h3>
+                <h3 class="news-source" id="news-source">this is politics</h3>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel velit facilis
+                    recusandae praesentium consequatur architecto eius fugit minus est aperiam, soluta molestiae
+                    repellendus nulla consectetur vitae dolor voluptate sequi!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="2.js"></script>
+</body>
+
+</html>
